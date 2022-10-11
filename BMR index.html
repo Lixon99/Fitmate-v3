@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BMR</title>
+  <link rel="stylesheet" href="BMR_Style.css" />
+</head>
+
+<body>
+  <section>
+    <main>
+      <div class="bmr-calculator">
+        <h2>BMR Calculator</h2>
+        <div class="controls">
+          <form>
+            <h3>Age (10 - 100)</h3>
+            <input type="text" id="age" value="28" />
+
+            <div class="gender">
+              <h3>Gender</h3>
+              <input type="radio" id="male" value="male" name="gender" checked />
+              <label for="male">Male</label>
+              <input type="radio" id="female" value="female" name="gender" />
+              <label for="female">Female</label>
+            </div>
+
+            <div class="chooseweight">
+              <h3>Choose weight</h3>
+              <input type="radio" id="moreweight" value="moreweight" name="chooseweight" checked />
+              <label for="moreweight">More weight</label>
+              <input type="radio" id="lessweight" value="lessweight" name="chooseweight" />
+              <label for="lessweight">Less weight</label> <br>
+              <input type="radio" id="noweight" value="noweight" name="chooseweight" />
+              <label for="noweight">No weight</label>
+            </div>
+
+            <div class="height">
+              <h3>Height</h3>
+              <input type="text" id="height" value="180" />
+              <div class="unit">cm</div>
+            </div>
+
+            <div class="weight">
+              <h3>Weight</h3>
+              <input type="text" id="weight" value="65" />
+              <div class="unit">kg</div>
+            </div>
+          </form>
+        </div>
+
+        <div class="result">
+          <button class="calculate-btn">Calculate</button>
+
+          <div class="result-message">
+            <span class="calories">1,640</span> Calories/day
+          </div>
+
+          <div class="error-message">
+            <p>Please enter all the details correctly.</p>
+          </div>
+        </div>
+      </div>
+    </main>
+  </section>
+
+  <section>
+    <script src="BMR.js"></script>
+    <p>BMI link: <a href="file:///C:/Users/nikal/OneDrive - NEXT Uddannelse København/MuscleBuddy/BMI Index.html"
+        style="color: black"> Use
+        this</a>
+    <p>Fitmate: <a
+        href="file:///C:/Users/nikal/OneDrive%20-%20NEXT%20Uddannelse%20K%C3%B8benhavn/MuscleBuddy/MuscleBuddy.html"
+        style="color: black">Use
+        this</a>
+    </p>
+  </section>
+</body>
+
+</html>

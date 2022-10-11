@@ -1,0 +1,146 @@
+a:link,
+a:visited {
+    text-decoration: none;
+}
+
+a:hover,
+a:active {
+    text-decoration: underline;
+}
+
+body {
+    width: 300px;
+    height: 600px;
+    left: 700px;
+    bottom: 250px;
+    position: absolute;
+}
+
+.linksfromBMI {
+    border-bottom: 5px solid black;
+    border-left: 5px solid black;
+    border-right: 5px solid black;
+    padding: 0.5em;
+    width: 18.25vw;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    left: 500px;
+    bottom: 0px;
+}
+
+.box {
+    min-width: 350px;
+    max-width: 500px;
+    font-family: "Roboto", sans-serif;
+    padding: 0px 0px;
+    box-shadow: 0 4px 8px -3px rgba(0, 0, 0, 0.3);
+    border: 5px solid black;
+}
+
+.box::before {
+    font-family: "Roboto", sans-serif;
+    content: "";
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.3);
+    box-shadow: 0px 0px 166px -31px rgba(0, 0, 0, 0.15);
+    border-radius: 0px;
+    border: 5px solid black;
+    z-index: -1;
+}
+
+h1 {
+    text-align: center;
+    background: #222;
+    color: #fff;
+    font-weight: 100;
+    font-size: 24px;
+    margin-bottom: 8px;
+    padding: 24px 0;
+}
+
+.content {
+    padding: 0px auto;
+    text-align: center;
+}
+
+.input {
+    background: #fff;
+    box-shadow: 0px 0px 95px -30px rgba(0, 0, 0, 0.15);
+    border-radius: 28px;
+    padding: 18px 0;
+    margin-bottom: 20px;
+}
+
+.input label {
+    display: block;
+    font-size: 18px;
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 20px;
+}
+
+.input input {
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #000000;
+    width: 60%;
+    text-align: center;
+    font-size: 28px;
+    font-family: "Roboto", sans-serif;
+}
+
+button#calculate {
+    padding: 8px 24px;
+    margin: 16px 0;
+    font-size: 18px;
+    font-weight: 100;
+    text-transform: uppercase;
+    border: none;
+    background: #333;
+    color: #fff;
+    cursor: pointer;
+    margin-bottom: 32px;
+}
+
+button#calculate:hover {
+    background: #000000;
+    text-align: center;
+}
+
+.result {
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.result p {
+    font-weight: 600;
+    font-size: 22px;
+    color: #000;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.result #result {
+    font-size: 38px;
+    font-weight: 900;
+    color: #000000;
+    display: inline-block;
+    padding: 7px 20px;
+    border-radius: 55px;
+    margin-bottom: 25px;
+    margin-right: 8px;
+    vertical-align: middle;
+}
+
+#comment {
+    color: #000000;
+    font-weight: 600;
+    display: inline-block;
+}
